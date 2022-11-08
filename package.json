@@ -2,7 +2,7 @@
     "scripts": {
         "frontend:install": "cd udagram/udagram-frontend && npm install --legacy-peer-deps",
         "backend:install": "cd udagram/udagram-api && npm install",
-        "frontend:build": "cd udagram/udagram-frontend && npm run build",
+        "frontend:build": "cd udagram/udagram-frontend && NODE_OPTIONS=--openssl-legacy-provider && npm run build",
         "backend:build": "cd udagram/udagram-api && npm run build",
         "frontend:deploy": "cd udagram/udagram-frontend && npm run deploy",
         "backend:deploy": "cd udagram/udagram-api && npm run deploy",
