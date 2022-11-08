@@ -8,7 +8,7 @@ jobs:
   build-and-deploy:
     working_directory: ~/udagram
     docker:
-      - image: 'cimg/base:stable'
+      - image: 'cimg/node:14.15.0'
     steps:
       - node/install
       - checkout
