@@ -6,6 +6,7 @@ orbs:
   aws-elastic-beanstalk: circleci/aws-elastic-beanstalk@2.0.1
 jobs:
   build-and-deploy:
+    working_directory: ~/udacity/udagram
     docker:
       - image: 'cimg/base:stable'
     steps:
