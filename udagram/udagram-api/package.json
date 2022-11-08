@@ -16,7 +16,7 @@
     "archive": "cd www && zip -r Archive.zip . && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "chmod +x bin/deploy.sh && bin/deploy.sh",
-    "ebcli": "chmod +x bin/aws-eb.sh && bin/ebcli.sh"
+    "ebcli": "chmod +x bin/ebcli.sh && bin/ebcli.sh"
   },
   "keywords": [],
   "author": "Gabriel Ruttner",
