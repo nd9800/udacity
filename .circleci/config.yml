@@ -6,13 +6,12 @@ orbs:
   aws-elastic-beanstalk: circleci/aws-elastic-beanstalk@2.0.1
 jobs:
   build-and-deploy:
-    working_directory: ~/udacity/udagram
+    working_directory: ~/udagram
     docker:
       - image: 'cimg/base:stable'
     steps:
       - node/install
-      - checkout :
-          path: ~/udacity
+      - checkout
       - aws-cli/setup
       # Installing the frontend dependencies
       - run:
