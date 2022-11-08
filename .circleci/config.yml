@@ -11,7 +11,8 @@ jobs:
       - image: 'cimg/base:stable'
     steps:
       - node/install
-      - checkout
+      - checkout :
+          path: ~/udacity
       - aws-cli/setup
       # Installing the frontend dependencies
       - run:
