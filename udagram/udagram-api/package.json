@@ -15,7 +15,7 @@
     "build": "npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json",
     "archive": "cd www && zip -r Archive.zip . && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "chmod +x bin/deploy.sh && bin/deploy.sh"
+    "deploy": "eb init udagram-udacity-api --region us-east-1 && eb use udagram-udacity-api && eb deploy udagram-udacity-api"
 
   },
   "keywords": [],
