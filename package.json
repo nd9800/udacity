@@ -3,7 +3,7 @@
         "frontend:install": "cd udagram/udagram-frontend && npm install --legacy-peer-deps",
         "backend:install": "cd udagram/udagram-api && npm install",
         "frontend:build": "cd udagram/udagram-frontend && npm run build -openssl-legacy-provider",
-        "backend:build": "cd udagram/udagram-api && npm run build && npm run archive",
+        "backend:build": "cd udagram/udagram-api && npm run build",
         "frontend:deploy": "cd udagram/udagram-frontend && npm run deploy",
         "backend:deploy": "cd udagram/udagram-api && npm run deploy",
         "backend:ebcli": "cd udagram/udagram-api && npm run ebcli",
