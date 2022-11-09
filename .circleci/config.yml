@@ -42,6 +42,9 @@ jobs:
           name: Front-End Deploy
           command: |
             npm run frontend:deploy
+      - run:
+            name: My DB Port
+            command : echo ${POSTGRES_HOST}
       # Installing the Backend dependencies
       - run:
           name: Back-End Install
